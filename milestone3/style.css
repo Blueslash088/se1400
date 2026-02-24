@@ -1,0 +1,25 @@
+#wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0,auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+header {
+    background-color: red;
+    height: 150px;
+    grid-row: 1 / 2;
+}
+nav {
+    background-color: aqua;
+    height: 30px;
+    grid-row: 2 / 3;
+}
+#hero {
+    background-color: blue;
+    grid-row: 3 / 4;
+}
+main {
+
+}
+footer {
+    
+}
