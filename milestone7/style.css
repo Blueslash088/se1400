@@ -1,0 +1,98 @@
+#wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+header {
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(2, 85, 85);
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    margin: 0;
+
+}
+
+nav {
+    background-color: rgb(2, 85, 85);
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    top: 0;
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px #010057 solid;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s ease-out;
+}
+
+nav a:hover {
+    background-color: #010057;
+}
+
+#homehero {
+    height: 250px;
+    grid-row: 3 / 4;
+    grid-column: 3 / -3;
+    background-color: rgb(194, 191, 191);
+    margin: 0 25% 0 25%;
+    background-position: center;
+
+}
+
+#homehero img {
+    width: auto;
+    height: 250px;
+    float: left;
+    padding-right: 1rem;
+}
+
+#homehero p {
+    grid-column: 4 / -3;
+}
+
+main {
+    background-color: lightgray;
+    height: 300px;
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+}
+
+main h2 {
+    margin-bottom: 0;
+}
+
+main p {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #010057;
+    height: 30px;
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+    color: #ffffff;
+    padding: 10px;
+}
