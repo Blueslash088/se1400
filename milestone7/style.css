@@ -67,8 +67,14 @@ nav a:hover {
     padding-right: 1rem;
 }
 
-#homehero p {
+#homehero h3 {
     grid-column: 4 / -3;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#homehero p {
+    margin-top: 10px;
 }
 
 main {
